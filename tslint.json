@@ -1,0 +1,65 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:all"
+  ],
+  "rules": {
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "max-line-length": [
+      true,
+      160
+    ],
+    "no-inferrable-types": [
+      false
+    ],
+    "prefer-function-over-method": false,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "no-parameter-properties": false,
+    "member-ordering": [
+      true,
+      {
+        "alphabetize": false
+      }
+    ],
+    "no-unused-expression": [
+      false
+    ],
+    "no-console": [
+      true,
+      "log",
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "variable-name": [
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "typedef": [
+      true,
+      "property-declaration",
+      "variable-declaration",
+      "member-variable-declaration",
+      "parameter",
+      "arrow-parameter"
+    ]
+  },
+  "rulesDirectory": []
+}

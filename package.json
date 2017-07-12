@@ -1,0 +1,30 @@
+{
+  "name": "letschat",
+  "version": "1.0.0",
+  "description": "a simple {slack,irc}-like chat application in React and node.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mainnika",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.6.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.29",
+    "@types/react": "^15.0.37",
+    "@types/react-dom": "^15.5.1",
+    "awesome-typescript-loader": "^3.2.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "html-webpack-plugin": "^2.29.0",
+    "pug": "^2.0.0-rc.2",
+    "pug-loader": "^2.3.0",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1",
+    "webpack": "^3.2.0",
+    "webpack-error-beep": "git+https://github.com/mainnika/webpack-error-beep.git"
+  }
+}
