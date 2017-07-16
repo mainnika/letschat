@@ -11,11 +11,11 @@ class App extends React.Component<IApp> {
   public render(): false | JSX.Element {
 
     return (
-      <div className='chat-root'>
+      <div id='root'>
 
         <Header />
 
-        <div className='content container-fluid row'>
+        <div className='content'>
           <LeftPane />
           <RightPane />
         </div>

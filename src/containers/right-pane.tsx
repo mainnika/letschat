@@ -11,13 +11,13 @@ class RightPane extends React.Component<IRightPane> {
   public render(): false | JSX.Element {
 
     return (
-      <div className='pane col-12 col-md-9'>
+      <div className='pane right-pane'>
 
-        <div className='chat-title row'>
+        <div className='chat-title'>
           <Hello compiler='foo' framework='bar' />
         </div>
 
-        <div className='chat-messages row'>
+        <div className='chat-messages'>
           <Hello compiler='foo' framework='bar' />
           <Hello compiler='foo' framework='bar' />
           <Hello compiler='foo' framework='bar' />
@@ -31,12 +31,12 @@ class RightPane extends React.Component<IRightPane> {
           <Hello compiler='foo' framework='bar' />
         </div>
 
-        <div className='chat-input row'>
-          <form className='form-inline'>
-            <div className='chat-input-text col-9'>
+        <div className='chat-input'>
+          <form className='chat-input-form form-inline'>
+            <div className='chat-input-text'>
               <textarea className='form-control form-control-lg' placeholder='Hello from foo and bar!' rows={1}></textarea>
             </div>
-            <div className='chat-input-button col-3'>
+            <div className='chat-input-button'>
               <button type='button' className='btn btn-outline-primary btn-lg'>{_.sendMessageBtn}</button>
             </div>
           </form>

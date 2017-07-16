@@ -1,36 +1,26 @@
 
-$user-profile-height: 4rem;
-$user-list-contact-margin: 0.2rem;
+$user-list-contact-padding: 0.2rem;
 $user-list-contact-height: 3rem;
 
 .user-profile {
   background-color: aquamarine;
-  height: $user-profile-height;
-  width: 100%;
-  z-index: 2;
+  flex-shrink: 0;
 }
 
 .user-list {
+  flex-direction: column;
+  flex-grow: 1;
   overflow-y: scroll;
-  margin-top: -$user-profile-height;
-  padding-top: $user-profile-height + $user-list-contact-margin;
-  padding-bottom: $user-list-contact-margin;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-
-  div {
-    display: flex;
-  }
+  padding-left: $user-list-contact-padding;
+  padding-right: $user-list-contact-padding;
 }
 
 .user-list-contact {
   background-color: beige;
   cursor: pointer;
-  flex-direction: row;
-  height: $user-list-contact-height;
-  margin-top: $user-list-contact-margin;
-  margin-bottom: $user-list-contact-margin;
+  flex-shrink: 0;
+  margin-bottom: $user-list-contact-padding;
+  margin-top: $user-list-contact-padding;
 }
 
 .user-list-contact-avatar {
@@ -45,9 +35,9 @@ $user-list-contact-height: 3rem;
 }
 
 .user-list-contact-name {
-
+  font-weight: bold;
 }
 
 .user-list-contact-status {
-
+  font-style: italic;
 }

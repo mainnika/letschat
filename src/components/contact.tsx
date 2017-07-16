@@ -7,7 +7,7 @@ class Contact extends React.Component {
   public render() {
 
     return (
-      <div className='user-list-contact col-12'>
+      <div className='user-list-contact'>
         <div className='user-list-contact-avatar'>
           <img src='//via.placeholder.com/48x48' />
         </div>

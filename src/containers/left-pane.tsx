@@ -10,13 +10,13 @@ class LeftPane extends React.Component<ILeftPane> {
   public render(): false | JSX.Element {
 
     return (
-      <div className='pane col-12 col-md-3'>
+      <div className='pane left-pane'>
 
-        <div className='user-profile row'>
+        <div className='user-profile'>
           <Hello compiler='foo' framework='bar' />
         </div>
 
-        <div className='user-list row'>
+        <div className='user-list'>
           <Contact />
           <Contact />
           <Contact />
