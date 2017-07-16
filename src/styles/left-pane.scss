@@ -1,5 +1,7 @@
 
 $user-profile-height: 4rem;
+$user-list-contact-margin: 0.2rem;
+$user-list-contact-height: 3rem;
 
 .user-profile {
   background-color: aquamarine;
@@ -11,8 +13,41 @@ $user-profile-height: 4rem;
 .user-list {
   overflow-y: scroll;
   margin-top: -$user-profile-height;
-  padding-top: $user-profile-height;
+  padding-top: $user-profile-height + $user-list-contact-margin;
+  padding-bottom: $user-list-contact-margin;
   height: 100%;
   width: 100%;
   z-index: 1;
+
+  div {
+    display: flex;
+  }
+}
+
+.user-list-contact {
+  background-color: beige;
+  cursor: pointer;
+  flex-direction: row;
+  height: $user-list-contact-height;
+  margin-top: $user-list-contact-margin;
+  margin-bottom: $user-list-contact-margin;
+}
+
+.user-list-contact-avatar {
+  height: $user-list-contact-height;
+  width: $user-list-contact-height;
+}
+
+.user-list-contact-info {
+  flex-direction: column;
+  padding-left: $grid-gutter-width-base / 2;
+  padding-right: $grid-gutter-width-base / 2;
+}
+
+.user-list-contact-name {
+
+}
+
+.user-list-contact-status {
+
 }

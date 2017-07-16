@@ -11,7 +11,7 @@ class RightPane extends React.Component<IRightPane> {
   public render(): false | JSX.Element {
 
     return (
-      <div className='pane col-12 col-md-8'>
+      <div className='pane col-12 col-md-9'>
 
         <div className='chat-title row'>
           <Hello compiler='foo' framework='bar' />
