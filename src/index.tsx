@@ -1,9 +1,12 @@
+// tslint:disable:no-import-side-effect
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import { Hello } from './components/Hello';
+import { App } from './containers/app';
 
-ReactDOM.render(
-  <Hello compiler='TypeScript' framework='React' />,
-  document.getElementById('chat'),
-);
+import './styles/main.scss';
+
+const container: HTMLElement = document.getElementById('chat');
+
+ReactDOM.render(<App />, container);

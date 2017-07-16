@@ -1,0 +1,47 @@
+
+$chat-title-height: 4rem;
+$chat-input-height: 4rem;
+
+.chat-title {
+  background-color: antiquewhite;
+  height: $chat-title-height;
+  width: 100%;
+  z-index: 2;
+}
+
+.chat-messages {
+  margin-top: -$chat-title-height;
+  padding-top: $chat-title-height;
+  padding-bottom: $chat-input-height;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.chat-input {
+  background-color: azure;
+  margin-top: -$chat-input-height;
+  height: $chat-input-height;
+  width: 100%;
+  z-index: 2;
+
+  form {
+    width: 100%;
+  }
+}
+
+.chat-input-text {
+  padding-right: 0;
+
+  .form-control {
+    width: 100%;
+  }
+}
+
+.chat-input-button {
+
+  button {
+    width: 100%;
+  }
+}

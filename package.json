@@ -9,21 +9,31 @@
   "author": "mainnika",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "debug": "^2.6.8",
+    "jquery": "^3.2.1",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "tether": "^1.4.0"
   },
   "devDependencies": {
     "@types/debug": "0.0.29",
     "@types/react": "^15.0.37",
     "@types/react-dom": "^15.5.1",
+    "autoprefixer": "^7.1.2",
     "awesome-typescript-loader": "^3.2.1",
     "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "expose-loader": "^0.7.3",
+    "node-sass": "^4.5.3",
     "html-webpack-plugin": "^2.29.0",
+    "postcss-loader": "^2.0.6",
     "pug": "^2.0.0-rc.2",
     "pug-loader": "^2.3.0",
     "tslint": "^5.5.0",
     "typescript": "^2.4.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
     "webpack": "^3.2.0",
     "webpack-error-beep": "git+https://github.com/mainnika/webpack-error-beep.git"
   }

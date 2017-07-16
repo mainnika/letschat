@@ -59,6 +59,9 @@
       "member-variable-declaration",
       "parameter",
       "arrow-parameter"
+    ],
+    "no-empty-interface": [
+      false
     ]
   },
   "rulesDirectory": []

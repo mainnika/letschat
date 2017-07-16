@@ -1,0 +1,18 @@
+
+$user-profile-height: 4rem;
+
+.user-profile {
+  background-color: aquamarine;
+  height: $user-profile-height;
+  width: 100%;
+  z-index: 2;
+}
+
+.user-list {
+  overflow-y: scroll;
+  margin-top: -$user-profile-height;
+  padding-top: $user-profile-height;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}

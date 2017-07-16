@@ -17,6 +17,9 @@ module.exports = {
 
   entry: {
     vendor: [
+      'jquery',
+      'tether',
+      'bootstrap',
       'debug',
       'react',
       'react-dom',
@@ -38,11 +41,19 @@ module.exports = {
       },
       // { test: /\.json$/, loader: 'json-loader' },
       { test: /\.pug$/, loader: 'pug-loader' },
+      { test: /\.scss$/, loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] },
+      { test: /jquery\.min\.js$/, loader: 'expose-loader?jQuery' },
+      { test: /tether\.min\.js$/, loader: 'expose-loader?Tether' },
     ],
   },
 
   resolve: {
     extensions: ['.ts', '.js', '.tsx', 'jsx'],
+    alias: {
+      'bootstrap': join(context, './node_modules/bootstrap/dist/js/bootstrap.min.js'),
+      'tether': join(context, './node_modules/tether/dist/js/tether.min.js'),
+      'jquery': join(context, './node_modules/jquery/dist/jquery.min.js'),
+    },
   },
 
   plugins: [

@@ -1,0 +1,33 @@
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './left-pane.scss';
+@import './right-pane.scss';
+
+$header-height: $navbar-padding-y * 2 + $font-size-base + $line-height-base;
+
+html, body, #chat, .chat-root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, div {
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  height: $header-height;
+  z-index: 2;
+}
+
+.pane {
+  height: 100%;
+}
+
+.content {
+  margin-top: -$header-height;
+  padding-top: $header-height;
+  height: 100%;
+  z-index: 1;
+}
