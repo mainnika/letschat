@@ -41,3 +41,25 @@ $user-list-contact-height: 3rem;
 .user-list-contact-status {
   font-style: italic;
 }
+
+.user-profile {
+
+}
+
+.user-profile-avatar {
+
+}
+
+.user-profile-info {
+  flex-direction: column;
+  padding-left: $grid-gutter-width-base / 2;
+  padding-right: $grid-gutter-width-base / 2;
+}
+
+.user-profile-name {
+  font-weight: bold;
+}
+
+.user-profile-status {
+  font-style: italic;
+}

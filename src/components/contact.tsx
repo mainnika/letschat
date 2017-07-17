@@ -14,10 +14,10 @@ class Contact extends React.Component {
         <div className='user-list-contact-info'>
           <div className='user-list-contact-name'>
             NAME
-        </div>
+          </div>
           <div className='user-list-contact-status'>
             STATUS
-        </div>
+          </div>
         </div>
       </div>
     );
