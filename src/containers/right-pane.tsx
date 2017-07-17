@@ -3,6 +3,7 @@ import * as React from 'react';
 import _ from '../configs/strings';
 
 import { Hello } from '../components/hello';
+import { Message } from '../components/message';
 
 interface IRightPane { }
 
@@ -18,17 +19,17 @@ class RightPane extends React.Component<IRightPane> {
         </div>
 
         <div className='chat-messages'>
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
-          <Hello compiler='foo' framework='bar' />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
+          <Message />
         </div>
 
         <div className='chat-input'>

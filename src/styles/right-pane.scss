@@ -1,6 +1,7 @@
 
 $chat-input-padding: 0.3rem;
 $chat-messages-padding: 0.3rem;
+$chat-messages-message-height: 4rem;
 
 .chat-title {
   background-color: antiquewhite;
@@ -14,6 +15,34 @@ $chat-messages-padding: 0.3rem;
   padding-left: $chat-messages-padding;
   padding-right: $chat-messages-padding;
 }
+
+.chat-messages-message {
+  flex-shrink: 0;
+  padding-bottom: $chat-messages-padding;
+  padding-top: $chat-messages-padding;
+}
+
+.chat-messages-message-avatar {
+  height: $chat-messages-message-height;
+  width: $chat-messages-message-height;
+}
+
+.chat-messages-message-info {
+  flex-direction: column;
+  padding-left: $grid-gutter-width-base / 2;
+  padding-right: $grid-gutter-width-base / 2;
+}
+
+.chat-messages-message-name {
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.chat-messages-message-text {
+  align-items: center;
+  flex-grow: 1;
+}
+
 
 .chat-input {
   background-color: azure;
