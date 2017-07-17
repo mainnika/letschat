@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Contact } from '../components/contact';
+import { Contacts } from '../components/contacts';
 import { Hello } from '../components/hello';
 
 interface ILeftPane { }
@@ -16,30 +16,7 @@ class LeftPane extends React.Component<ILeftPane> {
           <Hello compiler='foo' framework='bar' />
         </div>
 
-        <div className='user-list'>
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-          <Contact />
-        </div>
+        <Contacts />
 
       </div>
     );
