@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import _ from '../configs/strings';
 
-import { Hello } from '../components/hello';
+import { ChatTitle } from '../components/chat-title';
 import { Messages } from '../components/messages';
 
 interface IRightPane { }
@@ -14,10 +14,7 @@ class RightPane extends React.Component<IRightPane> {
     return (
       <div className='pane right-pane'>
 
-        <div className='chat-title'>
-          <Hello compiler='foo' framework='bar' />
-        </div>
-
+        <ChatTitle />
         <Messages />
 
         <div className='chat-input'>

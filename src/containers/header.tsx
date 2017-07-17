@@ -2,8 +2,6 @@ import * as React from 'react';
 
 import _ from '../configs/strings';
 
-import { Hello } from '../components/hello';
-
 interface ILeftPane { }
 
 class Header extends React.Component<ILeftPane> {

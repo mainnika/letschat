@@ -67,3 +67,20 @@ $chat-messages-message-height: 4rem;
 .chat-input-button {
   flex-shrink: 0;
 }
+
+.chat-title {
+}
+
+.chat-title-info {
+  flex-direction: column;
+  padding-left: $grid-gutter-width-base / 2;
+  padding-right: $grid-gutter-width-base / 2;
+}
+
+.chat-title-name {
+  font-weight: bold;
+}
+
+.chat-title-status {
+
+}
