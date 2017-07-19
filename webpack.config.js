@@ -23,6 +23,9 @@ module.exports = {
       'debug',
       'react',
       'react-dom',
+      'react-redux',
+      'redux',
+      'redux-thunk'
     ],
     chat: join(src, 'index.tsx'),
   },

@@ -4,7 +4,7 @@ interface IChatTitle { }
 
 class ChatTitle extends React.Component {
 
-  public render() {
+  public render(): JSX.Element {
 
     return (
 

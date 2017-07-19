@@ -1,10 +1,19 @@
 import * as React from 'react';
 
+import { connect, DispatchProp } from 'react-redux';
+
+import { IStore } from '../reducers';
+
 import _ from '../configs/strings';
 
 interface ILeftPane { }
 
-class Header extends React.Component<ILeftPane> {
+class HeaderContainer extends React.Component<ILeftPane & DispatchProp<IStore>> {
+
+  public static updateProps(state: IStore): ILeftPane {
+
+    return {};
+  }
 
   public render(): false | JSX.Element {
 
@@ -39,5 +48,7 @@ class Header extends React.Component<ILeftPane> {
     );
   }
 }
+
+const Header = connect(HeaderContainer.updateProps)(HeaderContainer);
 
 export { Header };

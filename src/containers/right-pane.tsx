@@ -1,13 +1,21 @@
 import * as React from 'react';
 
+import { connect, DispatchProp } from 'react-redux';
+
 import _ from '../configs/strings';
 
 import { ChatTitle } from '../components/chat-title';
 import { Messages } from '../components/messages';
+import { IStore } from '../reducers';
 
 interface IRightPane { }
 
-class RightPane extends React.Component<IRightPane> {
+class RightPaneContainer extends React.Component<IRightPane & DispatchProp<IStore>> {
+
+  public static updateProps(state: IStore): IRightPane {
+
+    return {};
+  }
 
   public render(): false | JSX.Element {
 
@@ -32,5 +40,7 @@ class RightPane extends React.Component<IRightPane> {
     );
   }
 }
+
+const RightPane = connect(RightPaneContainer.updateProps)(RightPaneContainer);
 
 export { RightPane };

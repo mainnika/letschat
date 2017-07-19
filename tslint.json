@@ -55,9 +55,9 @@
     "typedef": [
       true,
       "property-declaration",
-      "variable-declaration",
       "member-variable-declaration",
       "parameter",
+      "call-signature",
       "arrow-parameter"
     ],
     "no-empty-interface": [

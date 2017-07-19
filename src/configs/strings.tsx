@@ -9,6 +9,9 @@ const strings = {
 
   // Right pane
   sendMessageBtn: 'send',
+
+  // Profile
+  profileAnonymousName: 'anonymous',
 };
 
 export default strings;
