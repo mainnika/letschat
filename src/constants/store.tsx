@@ -4,8 +4,13 @@ interface IAuthStore {
   user: string;
 }
 
-interface IStore {
-  auth: IAuthStore;
+interface IConnStore {
+  state: number;
 }
 
-export { IAuthStore, IStore };
+interface IStore {
+  auth: IAuthStore;
+  conn: IConnStore;
+}
+
+export { IAuthStore, IConnStore, IStore };

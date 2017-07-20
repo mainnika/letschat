@@ -12,6 +12,7 @@ import _ from '../constants/strings';
 interface IUserProfile {
   authorized?: boolean;
   nickname?: string;
+  state?: number;
 }
 
 class UserProfile extends React.Component<IUserProfile & DispatchProp<IStore>> {
@@ -28,6 +29,7 @@ class UserProfile extends React.Component<IUserProfile & DispatchProp<IStore>> {
             <h2>{this.renderName()}</h2>
           </div>
           <div className='user-profile-status'>
+            {this.renderConnectionState()}
           </div>
         </div>
       </div>
@@ -46,6 +48,23 @@ class UserProfile extends React.Component<IUserProfile & DispatchProp<IStore>> {
     }
 
     return _.profileAnonymousName;
+  }
+
+  private renderConnectionState(): string {
+
+    switch (this.props.state) {
+
+      case WebSocket.CONNECTING:
+        return _.profileConnConnecting;
+
+      case WebSocket.OPEN:
+        return _.profileConnActive;
+
+      case WebSocket.CLOSED:
+      case WebSocket.CLOSING:
+      default:
+        return _.profileConnError;
+    }
   }
 }
 

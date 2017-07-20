@@ -14,6 +14,9 @@ const strings = {
 
   // Profile
   profileAnonymousName: 'anonymous',
+  profileConnConnecting: '⏺ connecting...',
+  profileConnActive: '✅ online',
+  profileConnError: '🆘 error',
 };
 
 export default strings;
