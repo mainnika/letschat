@@ -1,3 +1,5 @@
+'use strict';
+
 // tslint:disable:typedef
 // tslint:disable:no-default-export
 // tslint:disable:object-literal-sort-keys

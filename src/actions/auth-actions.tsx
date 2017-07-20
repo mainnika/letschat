@@ -1,10 +1,12 @@
+'use strict';
+
 import { Dispatch } from 'redux';
 
-import { Action } from '../configs/action';
+import { Action, IReceiveUserAuth } from '../constants/action';
 
 class AuthActions {
 
-  public static initAuth = () => ({
+  public static initAuth = (): IReceiveUserAuth => ({
     type: Action.ReceiveUserAuth,
     user: 'foobar✌',
   })

@@ -1,18 +1,18 @@
-import { combineReducers } from 'redux';
+'use strict';
 
-import { Action } from '../configs/action';
-import { authed, Iauthed } from './authed';
+import { combineReducers, Reducer } from 'redux';
 
-interface IStore {
-  authed: Iauthed;
-}
+import { Action } from '../constants/action';
+import { IStore } from '../constants/store';
+import { AuthReducers } from './auth';
 
-interface IAction {
-  type: Action;
-}
+const createReducer = (): Reducer<IStore> => {
 
-const index = combineReducers<IStore>({
-  authed,
-});
+  const auth: AuthReducers = new AuthReducers();
 
-export { authed, index, IAction, IStore };
+  return combineReducers<IStore>({
+    auth: auth.reduce.bind(auth),
+  });
+};
+
+export { createReducer };

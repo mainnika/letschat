@@ -2,9 +2,9 @@ import * as React from 'react';
 
 import { connect, DispatchProp } from 'react-redux';
 
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
-import _ from '../configs/strings';
+import _ from '../constants/strings';
 
 interface ILeftPane { }
 

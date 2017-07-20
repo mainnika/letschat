@@ -1,10 +1,12 @@
+'use strict';
+
 import * as React from 'react';
 
 interface IContact { }
 
 class Contact extends React.Component {
 
-  public render() {
+  public render(): JSX.Element {
 
     return (
       <div className='user-list-contact'>

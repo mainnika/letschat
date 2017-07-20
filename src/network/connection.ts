@@ -1,7 +1,7 @@
 
 import { applyMiddleware, createStore, Store, StoreEnhancerStoreCreator } from 'redux';
 
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
 class Connection {
 

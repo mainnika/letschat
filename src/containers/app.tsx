@@ -3,7 +3,7 @@ import * as React from 'react';
 import { connect, DispatchProp } from 'react-redux';
 
 import { AuthActions } from '../actions/auth-actions';
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
 import { Header } from './header';
 import { LeftPane } from './left-pane';

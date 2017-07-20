@@ -4,7 +4,7 @@ import { connect, DispatchProp } from 'react-redux';
 
 import { Contacts } from '../components/contacts';
 import { UserProfile } from '../components/user-profile';
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
 interface ILeftPane {
   user?: {
@@ -19,8 +19,8 @@ class LeftPaneContainer extends React.Component<ILeftPane & DispatchProp<IStore>
 
     return {
       user: {
-        authorized: !!state.authed.user,
-        nickname: state.authed.user,
+        authorized: !!state.auth.user,
+        nickname: state.auth.user,
       },
     };
   }

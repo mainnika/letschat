@@ -1,11 +1,13 @@
+'use strict';
+
 import * as React from 'react';
 
 import { DispatchProp } from 'react-redux';
 
 import { AuthActions } from '../actions/auth-actions';
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
-import _ from '../configs/strings';
+import _ from '../constants/strings';
 
 interface IUserProfile {
   authorized?: boolean;

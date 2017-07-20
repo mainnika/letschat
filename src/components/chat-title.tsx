@@ -1,3 +1,5 @@
+'usr strict';
+
 import * as React from 'react';
 
 interface IChatTitle { }

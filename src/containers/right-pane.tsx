@@ -2,11 +2,11 @@ import * as React from 'react';
 
 import { connect, DispatchProp } from 'react-redux';
 
-import _ from '../configs/strings';
+import _ from '../constants/strings';
 
 import { ChatTitle } from '../components/chat-title';
 import { Messages } from '../components/messages';
-import { IStore } from '../reducers';
+import { IStore } from '../constants/store';
 
 interface IRightPane { }
 
