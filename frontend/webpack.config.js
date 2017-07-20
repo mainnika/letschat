@@ -8,8 +8,12 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackErrorBeep = require('webpack-error-beep');
 
 const context = __dirname;
-const output = join(__dirname, '.dist');
-const src = join(__dirname, 'src');
+const output = join(__dirname, '../.dist/frontend');
+const entry = join(context, 'index.tsx');
+const html = join(context, 'index.pug');
+const scss = join(context, 'styles/main.scss');
+const statics = join(context, 'static');
+const configFileName = join(context, 'tsconfig.json');
 
 module.exports = {
 
@@ -27,7 +31,8 @@ module.exports = {
       'redux',
       'redux-thunk'
     ],
-    chat: join(src, 'index.tsx'),
+    css: scss,
+    chat: entry,
   },
 
   output: {
@@ -39,8 +44,8 @@ module.exports = {
     loaders: [
       {
         test: /\.tsx?$/,
-        exclude: /node_modules/,
         loader: 'awesome-typescript-loader',
+        options: { configFileName },
       },
       // { test: /\.json$/, loader: 'json-loader' },
       { test: /\.pug$/, loader: 'pug-loader' },
@@ -53,18 +58,18 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.tsx', 'jsx'],
     alias: {
-      'bootstrap': join(context, './node_modules/bootstrap/dist/js/bootstrap.min.js'),
-      'tether': join(context, './node_modules/tether/dist/js/tether.min.js'),
-      'jquery': join(context, './node_modules/jquery/dist/jquery.min.js'),
+      'bootstrap': join(context, '../node_modules/bootstrap/dist/js/bootstrap.min.js'),
+      'tether': join(context, '../node_modules/tether/dist/js/tether.min.js'),
+      'jquery': join(context, '../node_modules/jquery/dist/jquery.min.js'),
     },
   },
 
   plugins: [
     new WebpackErrorBeep(),
     new CommonsChunkPlugin('vendor'),
-    new CopyWebpackPlugin([{ from: join(src, 'static') }]),
+    new CopyWebpackPlugin([{ from: statics }]),
     new HtmlWebpackPlugin({
-      template: join(src, 'index.pug'),
+      template: html,
       filename: 'index.html',
       minify: {},
       hash: true,

@@ -16,7 +16,7 @@ class Connection {
     this.store.dispatch(ConnActions.changeState(WebSocket.CONNECTING));
 
     try {
-      this.ws = new WebSocket('ws://proxy.mainnika.ru');
+      this.ws = new WebSocket('ws://game-woa.tokarch.uk/socket');
       this.ws.addEventListener('open', this.onOpen.bind(this));
       this.ws.addEventListener('close', this.onClose.bind(this));
       this.ws.addEventListener('error', this.onError.bind(this));
