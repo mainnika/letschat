@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "../node_modules",
     "module": "commonjs",
-    "outDir": "../.dist/backend",
+    "outDir": "../.dist/common",
     "strict": true,
     "target": "ESNEXT"
   }

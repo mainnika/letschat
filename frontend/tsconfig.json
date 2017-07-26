@@ -1,13 +1,21 @@
 {
   "compilerOptions": {
+    "baseUrl": "../node_modules",
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
     "types": [
+      "bluebird",
       "debug",
       "react",
       "react-dom",
-      "react-redux"
-    ]
+      "react-redux",
+      "jayson"
+    ],
+    "paths": {
+      "common/*": [
+        "../common/*"
+      ]
+    }
   }
 }

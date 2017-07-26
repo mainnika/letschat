@@ -22,4 +22,5 @@ const reducer: Reducer<IStore> = createReducer();
 const store: Store<IStore> = thunkableRedux(reducer);
 const connection: Connection = new Connection(store);
 
+Connection.Instance = connection;
 ReactDOM.render(<Provider store={store}><App /></Provider>, container);

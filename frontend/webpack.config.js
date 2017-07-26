@@ -3,6 +3,7 @@
 const { join } = require('path');
 
 const CommonsChunkPlugin = require('webpack').optimize.CommonsChunkPlugin;
+const TsConfigPathsPlugin = require('awesome-typescript-loader').TsConfigPathsPlugin;
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackErrorBeep = require('webpack-error-beep');
@@ -21,6 +22,9 @@ module.exports = {
 
   entry: {
     vendor: [
+      'ajv',
+      'bluebird',
+      'jayson',
       'jquery',
       'tether',
       'bootstrap',
@@ -62,6 +66,9 @@ module.exports = {
       'tether': join(context, '../node_modules/tether/dist/js/tether.min.js'),
       'jquery': join(context, '../node_modules/jquery/dist/jquery.min.js'),
     },
+    plugins: [
+      new TsConfigPathsPlugin({ configFileName }),
+    ],
   },
 
   plugins: [
